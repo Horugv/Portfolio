@@ -1,0 +1,62 @@
+@import './icomoon/style.css';
+@import './help/font.scss';
+
+$colorAppBg: #26262D;
+$colorAppText: #D0D0D2;
+$colorMain: #78CC6D;
+$colorMainBg: #31313A;
+$colorWhiteText: rgba(255, 255, 255, 0.85);
+$colorText: rgba(255, 255, 255, 0.55);
+$colorScrolLine: #65656C;
+
+body,
+html,
+#root, .App {
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+div {
+  box-sizing: border-box;
+}
+:focus {
+  outline: 0;
+}
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $colorAppText;
+  // font-family: 'Popins reg';
+  @include Poppins();
+}
+.App {
+  background: $colorAppBg;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  max-width: auto;
+  display: flex;
+  margin: 8vh 6vw;
+  height: 84vh;
+  max-width: 1268px;
+  max-height: 674px;
+}
+@media (max-height: 700px) {
+  .main {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    height: 88vh;
+  }
+    
+}
+
+
+
+@import 'ui/ui.scss';
+@import 'components/nav.scss';
+@import 'components/right-block.scss';
+@import 'block/CVBlock.scss';
+@import 'page/about.scss';

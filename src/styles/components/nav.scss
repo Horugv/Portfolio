@@ -1,0 +1,49 @@
+.navigation {
+ 
+  padding: 20px 10px 20px 0;
+  &_list {
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #31313A;
+  }
+  &_item {
+    width: 72px;
+    height: 69px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    color: $colorWhiteText;
+    text-decoration: none;
+    &.active {
+      color: $colorMain;
+    }
+    &:hover {
+      transition: all .3s ease;
+      color: $colorMain;
+    }
+    &:not(:last-child):after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: radial-gradient(ellipse at right, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+    & .icon {
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+    & span {
+      text-transform: uppercase;
+      font-size: 11px;
+      @include Poppins('medium')
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.right-block {
+  &_wrapper {
+    width: 708px;
+    padding: 20px 0;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    width: 708px;
+    height: 100%;
+    max-height: 100%;
+    background: $colorMainBg;
+    // padding: 30px;
+    overflow-y: scroll;
+    // Mozila
+    scrollbar-color: $colorScrolLine $colorMainBg;
+    scrollbar-width: thin ;
+    //  webkit
+    &::-webkit-scrollbar {
+      background-color:  $colorMainBg;
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $colorScrolLine;
+      border-radius: 5px;
+      // box-shadow: inset 1px 1px 10px #f3faf7;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: $colorScrolLine;
+    }
+
+    &.entering {
+      animation: showRightBlock 1000ms ease-out forwards;
+    } 
+    &.exiting {
+      animation: showRightBlock 1500ms ease-out alternate-reverse;
+    }
+    &.exited {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+  }
+  &_text {
+    font-size: 16px;
+    color: $colorText;
+  }
+  &__section {
+    // &:not(:last-child) {
+      padding: 30px;
+    // }
+  }
+}
+
+@keyframes showRightBlock {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  50% {
+    opacity: 1;
+    // transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
