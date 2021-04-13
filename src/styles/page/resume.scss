@@ -1,0 +1,22 @@
+.resume {
+  &__experience {
+    display: flex;
+    margin: 0 -30px;
+    &_block {
+      width: 50%;
+      padding: 0 30px;
+      position: relative;
+      &:nth-child(odd) {
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 1px;
+          background: $colorLineVertical;
+        }
+      }
+    }
+  }
+}

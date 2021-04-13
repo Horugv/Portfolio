@@ -33,10 +33,11 @@ const RighrBlock = ({children}) => {
           // onExited = {() => console.log('onExited')}
         >
           {state => 
-           
             // <Scrollbars  style={{  height: '100%' }}>
               <div className = {`right-block_content ${state}`} >
-                {children}
+                <div className='right-block_content_wrapper'>
+                  {children}
+                </div>
               </div>
             // </Scrollbars>
           }

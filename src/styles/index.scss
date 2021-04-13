@@ -1,17 +1,28 @@
-@import './icomoon/style.css';
-@import './help/font.scss';
+@import "./icomoon/style.css";
+@import "./help/font.scss";
 
-$colorAppBg: #26262D;
-$colorAppText: #D0D0D2;
-$colorMain: #78CC6D;
-$colorMainBg: #31313A;
+$colorAppBg: linear-gradient(to bottom right, #17171b 0%, #28282f 100%);
+$colorAppText: #d0d0d2;
+$colorMain: #78cc6d;
+$colorMainBg: #31313a;
 $colorWhiteText: rgba(255, 255, 255, 0.85);
 $colorText: rgba(255, 255, 255, 0.55);
-$colorScrolLine: #65656C;
+$colorScrolLine: #65656c;
+$colorLineVertical: radial-gradient(
+  ellipse at top,
+  rgba(197, 202, 213, 0.15) 0%,
+  rgba(255, 255, 255, 0) 70%
+);
+$colorLineHorizontal: radial-gradient(
+  ellipse at left,
+  rgba(197, 202, 213, 0.15) 0%,
+  rgba(255, 255, 255, 0) 70%
+);
 
 body,
 html,
-#root, .App {
+#root,
+.App {
   height: 100%;
   display: flex;
   width: 100%;
@@ -28,7 +39,6 @@ body {
   flex-direction: column;
   position: relative;
   color: $colorAppText;
-  // font-family: 'Popins reg';
   @include Poppins();
 }
 .App {
@@ -50,13 +60,11 @@ body {
     margin-bottom: 6vh;
     height: 88vh;
   }
-    
 }
 
-
-
-@import 'ui/ui.scss';
-@import 'components/nav.scss';
-@import 'components/right-block.scss';
-@import 'block/CVBlock.scss';
-@import 'page/about.scss';
+@import "ui/ui.scss";
+@import "components/nav.scss";
+@import "components/right-block.scss";
+@import "block/CVBlock.scss";
+@import "page/about.scss";
+@import "page/resume.scss";

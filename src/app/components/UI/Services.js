@@ -4,9 +4,9 @@ export const Services = ({icon, title, desc}) => {
   return (
     <div className='services__item'>
       <div className='services__item_icon'>
-        <span class={`icon ${icon}`}></span>
+        <span className={`icon ${icon}`}></span>
       </div>
-      <div className='services__item_titel'>
+      <div className='services__item_title'>
         {title}
       </div>
       <div className='services__item_desc'>
