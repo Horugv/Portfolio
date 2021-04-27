@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import TitleWithIcon from "./TitleWithIcon"
+import TitleWithIcon from "./TitleWithIcon";
 
 export const Experience = ({ blockTitle, data, icon }) => {
   return (

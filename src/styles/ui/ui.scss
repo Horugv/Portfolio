@@ -270,11 +270,11 @@
     &__item {
       padding: 5px 0;
       &::before {
-        content: '\e907';
+        content: "\e907";
         margin-right: 15px;
         color: $colorMain;
         font-size: 14px;
-        font-family: 'icomoon' !important;
+        font-family: "icomoon" !important;
       }
     }
   }

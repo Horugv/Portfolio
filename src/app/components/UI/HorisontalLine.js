@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const HorisontalLine = () => {
-  return (
-    <div className="horisontal-line">
-      
-    </div>
-  )
-}
+  return <div className="horisontal-line" />;
+};
 
-export default HorisontalLine
+export default HorisontalLine;
