@@ -1,15 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 
-export const Experience = ({ blockTitle, data, icon }) => {
-  // const { active, date, title, company, desc } = data;
+import TitleWithIcon from "./TitleWithIcon"
 
+export const Experience = ({ blockTitle, data, icon }) => {
   return (
     <div className="experience__block">
-      <div className="experience__title">
-        <i className={`icon ${icon}`} />
-        {blockTitle}
-      </div>
+      <TitleWithIcon icon={icon} title={blockTitle} />
       <div className="experience__list">
         {data &&
           data.map((item, index) => (

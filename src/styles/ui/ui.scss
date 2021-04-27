@@ -156,35 +156,36 @@
   }
 }
 
-.experience {
-  &__title {
-    position: relative;
-    @include Poppins("medium");
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    .icon {
-      font-size: 28px;
-      margin-right: 10px;
-      color: $colorMain;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      content: "";
-      background: radial-gradient(
-        ellipse at left,
-        rgba(197, 202, 213, 0.15) 0%,
-        rgba(255, 255, 255, 0) 70%
-      );
-    }
+.titleWithIcon {
+  position: relative;
+  @include Poppins("medium");
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  .icon {
+    font-size: 28px;
+    margin-right: 10px;
+    color: $colorMain;
   }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    content: "";
+    background: radial-gradient(
+      ellipse at left,
+      rgba(197, 202, 213, 0.15) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+  }
+}
+
+.experience {
   &__item {
     position: relative;
     padding: 30px 0;
@@ -229,6 +230,52 @@
     }
     &_desc {
       color: $colorText;
+    }
+  }
+}
+
+.skill {
+  &-dots {
+    &__title {
+      color: $colorWhiteText;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 10px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      min-width: 14px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $colorSkillDissable;
+      &.active {
+        background-color: $colorMain;
+      }
+    }
+  }
+  &-circle {
+    &__title {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+    }
+  }
+  &-list {
+    margin: -5px 0;
+    &__item {
+      padding: 5px 0;
+      &::before {
+        content: '\e907';
+        margin-right: 15px;
+        color: $colorMain;
+        font-size: 14px;
+        font-family: 'icomoon' !important;
+      }
     }
   }
 }
