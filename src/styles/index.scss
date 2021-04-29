@@ -96,6 +96,10 @@ button {
   }
 }
 
+.map {
+  height: 240px;
+}
+
 @media (max-height: 700px) {
   .main {
     margin-top: 6vh;
@@ -110,3 +114,4 @@ button {
 @import "block/CVBlock.scss";
 @import "page/about.scss";
 @import "page/resume.scss";
+@import "page/contact.scss";
