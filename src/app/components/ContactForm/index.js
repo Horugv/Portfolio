@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import emailjs from "emailjs-com";
+import * as Yup from "yup";
 
-import Loader from '../UI/Loader'
+import Loader from "../UI/Loader";
+
+const ValidationSchema = Yup.object().shape({
+  fullName: Yup.string().required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
+  message: Yup.string().required("Required"),
+});
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -12,6 +19,7 @@ const ContactForm = () => {
       email: "",
       message: "",
     },
+    validationSchema: ValidationSchema,
     onSubmit: (values) => {
       handleSubmit(values);
     },
@@ -48,7 +56,7 @@ const ContactForm = () => {
 
   return (
     <div className="form-contact">
-      <Loader loading={loading}/>
+      <Loader loading={loading} />
       <form onSubmit={formik.handleSubmit}>
         {formik.status?.message && (
           <div className="form-status">{formik.status?.message}</div>
@@ -67,7 +75,7 @@ const ContactForm = () => {
               disabled={loading}
             />
             {formik?.errors?.fullName && formik?.touched?.fullName && (
-              <div>{formik?.errors?.fullName}</div>
+              <div className="form-validation">{formik?.errors?.fullName}</div>
             )}
           </div>
           <div className="form-group">
@@ -83,7 +91,7 @@ const ContactForm = () => {
               disabled={loading}
             />
             {formik?.errors?.email && formik?.touched?.email && (
-              <div>{formik?.errors?.email}</div>
+              <div className="form-validation">{formik?.errors?.email}</div>
             )}
           </div>
         </div>
@@ -101,7 +109,7 @@ const ContactForm = () => {
             disabled={loading}
           />
           {formik?.errors?.message && formik?.touched?.message && (
-            <div>{formik?.errors?.message}</div>
+            <div className="form-validation">{formik?.errors?.message}</div>
           )}
         </div>
         <div className="form-button">
