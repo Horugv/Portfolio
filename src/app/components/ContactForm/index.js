@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import emailjs from "emailjs-com";
 
+import Loader from '../UI/Loader'
+
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const formik = useFormik({
@@ -43,9 +45,10 @@ const ContactForm = () => {
         setLoading(false);
       });
   };
-  console.log(formik.status);
+
   return (
     <div className="form-contact">
+      <Loader loading={loading}/>
       <form onSubmit={formik.handleSubmit}>
         {formik.status?.message && (
           <div className="form-status">{formik.status?.message}</div>
