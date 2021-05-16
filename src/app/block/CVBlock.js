@@ -5,23 +5,25 @@ import { Link } from "react-router-dom";
 const CVBlock = () => {
   return (
     <div className="CVBlock">
-      <div className="CVBlock_slide"></div>
+      <div className="CVBlock_slide">
+        <img src="/media/bg-test.jpg" alt="forest" />
+      </div>
       <div className="CVBlock_hero">
-        <img src="" alt="" />
+        <img src="/media/Ihonin.jpg" alt="Yevhenii Ihonin" />
       </div>
       <div className="CVBlock_info">
         <div className="CVBlock_info_name">Ihonin Yevhenii</div>
         <div className="CVBlock_info_job">Front-end developer</div>
         <div className="CVBlock_info_social">
-          <Link to="/telegram">
+          <a href="https://t.me/IgoninYevhenii" target="_blank">
             <i className={classNames("icon", "icon-telegram")} />
-          </Link>
-          <Link to="/skype">
+          </a>
+          <a href="https://join.skype.com/invite/CR4NdY83qkes" target="_blank">
             <i className={classNames("icon", "icon-skype")}></i>
-          </Link>
-          <Link to="/github">
+          </a>
+          <a href="https://github.com/Horugv" target="_blank">
             <i className={classNames("icon", "icon-github")}></i>
-          </Link>
+          </a>
         </div>
       </div>
 

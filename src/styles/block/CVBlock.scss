@@ -1,7 +1,8 @@
 .CVBlock {
   background: $colorMainBg;
-  min-width: 480px;
-  width: 480px;
+  max-width: 480px;
+  width: 100%;
+  flex: 2;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -31,6 +32,15 @@
     right: 0;
     overflow: hidden;
     background: $colorMain;
+    & img {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -40,6 +50,7 @@
       bottom: -85px;
       transform: rotate(10deg);
       left: -60px;
+      z-index: 10;
     }
     &:after {
       content: "";
@@ -50,12 +61,15 @@
       bottom: -85px;
       transform: rotate(-10deg);
       right: -60px;
+      z-index: 10;
     }
   }
   &_hero {
     z-index: 100;
     width: 146px;
+    min-width: 146px;
     height: 146px;
+    min-height: 146px;
     border-radius: 50%;
     border: 2px solid $colorMainBg;
     overflow: hidden;
@@ -79,7 +93,7 @@
     &_social {
       display: flex;
       justify-content: center;
-      padding-top: 20px;
+      padding: 20px 0;
       a {
         display: flex;
         margin: 0 10px;
