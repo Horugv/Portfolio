@@ -4,6 +4,7 @@ import RightBlock from "../hoc/RightBlock";
 import Title from "../components/UI/Title";
 import HorisontalLine from "./../components/UI/HorisontalLine";
 import Map from "../components/Map";
+import ContactForm from "../components/ContactForm";
 import { TextWithDotsBlock } from "../components/UI/TextWithDots";
 
 const contactInfo = [
@@ -32,7 +33,14 @@ const Contact = () => {
             <Map />
           </div>
           <div className="contact__info">
-          <TextWithDotsBlock data={contactInfo} />
+            <TextWithDotsBlock data={contactInfo} />
+          </div>
+        </div>
+        <div className="right-block__section">
+          <Title colorText="Contact" text="Form" />
+          <HorisontalLine />
+          <div className="contact__form">
+            <ContactForm />
           </div>
         </div>
       </div>

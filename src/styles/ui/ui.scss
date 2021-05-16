@@ -279,3 +279,71 @@
     }
   }
 }
+
+.form {
+  &-status {
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 0px;
+    background: #fadddd;
+    border: 1px solid #f8cfcf;
+    color: #772b35;
+    padding-left: 20px;
+    border-radius: 10px;
+  }
+  &-group {
+    margin-bottom: 30px;
+    input {
+      height: 50px;
+    }
+    textarea {
+      resize: none;
+    }
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #666;
+      background-color: transparent;
+      font-size: 16px;
+      transition: border-color 0.5s;
+      color: $colorWhiteText;
+      &:focus {
+        border-bottom: 2px solid $colorMain;
+      }
+    }
+  }
+  &-button {
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+      border: none;
+      @include Poppins("medium");
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $colorWhiteText;
+      cursor: pointer;
+      transition: color 0.5s;
+      &:hover {
+        color: $colorMain;
+      }
+      & .icon {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+  &-group-row {
+    display: flex;
+    margin: 0 -15px;
+    & .form-group {
+      padding: 0 15px;
+      flex: 1;
+    }
+  }
+}
