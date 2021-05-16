@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Transition } from "react-transition-group";
-import { Scrollbars } from "react-custom-scrollbars";
 
 const RighrBlock = ({ children }) => {
   let [showBlock, setShowBlock] = useState(false);
@@ -8,11 +7,6 @@ const RighrBlock = ({ children }) => {
   useEffect(() => {
     setShowBlock(true);
   }, []);
-
-  // useEffect(() => {
-  //   // console.log(test)
-  //   return () =>{ setTest(false)}
-  // })
 
   return (
     <div className="right-block_wrapper">
@@ -31,15 +25,11 @@ const RighrBlock = ({ children }) => {
         // onExiting = {() => console.log('onExiting')}
         // onExited = {() => console.log('onExited')}
       >
-        {
-          (state) => (
-            // <Scrollbars  style={{  height: '100%' }}>
-            <div className={`right-block_content ${state}`}>
-              <div className="right-block_content_wrapper">{children}</div>
-            </div>
-          )
-          // </Scrollbars>
-        }
+        {(state) => (
+          <div className={`right-block_content ${state}`}>
+            <div className="right-block_content_wrapper">{children}</div>
+          </div>
+        )}
       </Transition>
     </div>
   );

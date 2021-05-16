@@ -144,6 +144,7 @@
     border-radius: 50%;
     margin-bottom: 5px;
     background-color: $colorMain;
+    overflow: hidden;
   }
   &__name {
     @include Poppins("medium");
@@ -401,6 +402,45 @@
     }
     100% {
       transform: rotate(360deg);
+    }
+  }
+}
+
+.works {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
+  margin-top: 30px;
+  &__item {
+    color: $colorWhiteText;
+    &:hover {
+      text-decoration: none;
+    }
+    &:hover &_title {
+      color: $colorMain;
+      text-decoration: underline;
+    }
+    &_img,
+    &_title {
+      display: flex;
+      justify-content: center;
+    }
+    &_title {
+      margin-bottom: 5px;
+      transition: all 0.3s;
+    }
+    &_img {
+      margin-bottom: 15px;
+    }
+    &_info {
+      color: $colorText;
+      &--title {
+        margin-right: 5px;
+      }
+      &--list {
+        font-style: italic;
+      }
     }
   }
 }
