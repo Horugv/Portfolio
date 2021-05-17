@@ -24,7 +24,8 @@ body,
 html,
 #root,
 .App {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   display: flex;
   width: 100%;
 }
@@ -36,8 +37,7 @@ div {
 }
 body {
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
   color: $colorAppText;
   @include Poppins();
@@ -50,11 +50,17 @@ body {
 .main {
   max-width: auto;
   display: flex;
+  justify-content: center;
   margin: 8vh 3vw;
   width: 100%;
   height: 84vh;
   max-width: 1268px;
   max-height: 674px;
+  &__block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 h1,
 h2,
@@ -120,3 +126,4 @@ img {
 @import "page/about.scss";
 @import "page/resume.scss";
 @import "page/contact.scss";
+@import "./responsive.scss";

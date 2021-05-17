@@ -67,3 +67,18 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 1199px) {
+  @keyframes showRightBlock {
+    0% {
+      opacity: 0;
+      transform: translateY(-500px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

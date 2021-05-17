@@ -16,13 +16,15 @@ const App = () => {
     <div className="App">
       <main className="main">
         <Nav />
-        <CVBlock />
-        <Switch>
-          <Route path="/about" exact component={About} />
-          <Route path="/resume" exact component={Resume} />
-          <Route path="/works" exact component={Work} />
-          <Route path="/contact" exact component={Contact} />
-        </Switch>
+        <div className="main__block">
+          <CVBlock />
+          <Switch>
+            <Route path="/about" exact component={About} />
+            <Route path="/resume" exact component={Resume} />
+            <Route path="/works" exact component={Work} />
+            <Route path="/contact" exact component={Contact} />
+          </Switch>
+        </div>
       </main>
     </div>
   );

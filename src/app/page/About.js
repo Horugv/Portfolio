@@ -26,26 +26,22 @@ const dataServices = [
   {
     icon: "icon-embed2",
     title: "front-end",
-    desc:
-      "Modern and mobile-ready website that will help you reach all of your marketing.",
+    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
   },
   {
     icon: "icon-embed2",
     title: "front-end",
-    desc:
-      "Modern and mobile-ready website that will help you reach all of your marketing.",
+    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
   },
   {
     icon: "icon-embed2",
     title: "front-end",
-    desc:
-      "Modern and mobile-ready website that will help you reach all of your marketing.",
+    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
   },
   {
     icon: "icon-embed2",
     title: "front-end",
-    desc:
-      "Modern and mobile-ready website that will help you reach all of your marketing.Modern and mobile-ready website that will help you reach all of your marketing.",
+    desc: "Modern and mobile-ready website that will help you reach all of your marketing.Modern and mobile-ready website that will help you reach all of your marketing.",
   },
 ];
 

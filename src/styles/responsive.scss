@@ -1,0 +1,40 @@
+@media (max-width: 1199px) {
+  .App {
+    overflow: scroll;
+  }
+  .main {
+    max-width: 750px;
+    padding: 0 15px 0 100px;
+    margin: 40px auto 10px auto;
+    height: auto;
+    max-height: none;
+    &__block {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  }
+  .navigation {
+    position: fixed;
+    left: calc(50% - 330px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .CVBlock {
+    max-width: 100%;
+    flex: none;
+    &_slide {
+      height: 260px;
+    }
+  }
+  .right-block {
+    &_wrapper {
+      min-height: 500px;
+      flex: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  
+}

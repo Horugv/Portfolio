@@ -14,16 +14,14 @@ const experience = [
     date: "2013 - Present",
     title: "Art Director",
     company: "Facebook Inc.",
-    desc:
-      "Collaborate with creative and development teams on the execution of ideas.",
+    desc: "Collaborate with creative and development teams on the execution of ideas.",
     active: true,
   },
   {
     date: "2013 - Present",
     title: "Art Director",
     company: "Facebook Inc.",
-    desc:
-      "Collaborate with creative and development teams on the execution of ideas.",
+    desc: "Collaborate with creative and development teams on the execution of ideas.",
     active: false,
   },
 ];
