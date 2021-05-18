@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import CVBlock from "./block/CVBlock";
 import Nav from "./components/Nav";
@@ -23,6 +23,8 @@ const App = () => {
             <Route path="/resume" exact component={Resume} />
             <Route path="/works" exact component={Work} />
             <Route path="/contact" exact component={Contact} />
+            <Redirect from="/" to="/about" />
+            <Redirect to="/about" />
           </Switch>
         </div>
       </main>

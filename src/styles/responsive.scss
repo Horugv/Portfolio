@@ -32,9 +32,106 @@
       min-height: 500px;
       flex: none;
     }
+    &_content {
+      border-radius: 10px;
+    }
   }
 }
 
 @media (max-width: 767px) {
-  
+  .main {
+    margin-top: 80px;
+    padding: 0 15px;
+  }
+  .navigation {
+    left: 0;
+    right: 0;
+    transform: none;
+    top: 0;
+    padding: 0;
+    height: 64px;
+    z-index: 100;
+    &__mob {
+      background: #31313a;
+      width: 100%;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__user {
+      display: flex;
+      align-items: center;
+    }
+    &__img {
+      width: 44px;
+      height: 44px;
+      margin-right: 15px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    &__hero {
+      @include Poppins("medium");
+      font-size: 15px;
+    }
+    &__desc {
+      font-size: 12px;
+    }
+    &__burger {
+      & .icon {
+        &-menu {
+          font-size: 22px;
+        }
+        &-close {
+          font-size: 20px;
+        }
+      }
+    }
+    &__menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      transition: all 0.3s;
+      z-index: -1;
+      &.show {
+        top: 64px;
+        width: 100vw;
+        transition: all 0.3s;
+      }
+    }
+    &_list {
+      position: relative;
+      flex-direction: row;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        height: 1px;
+        background: $colorLineHorizontal;
+      }
+    }
+    &_item {
+      height: 55px;
+      flex: 1;
+      &:not(:last-child):after {
+        left: auto;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $colorLineVertical;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .CVBlock {
+    &_slide {
+      height: 190px;
+    }
+  }
 }
