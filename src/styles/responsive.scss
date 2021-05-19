@@ -126,12 +126,250 @@
       }
     }
   }
+  .title {
+    margin-bottom: 15px;
+  }
+  .text-with-dots,
+  .services {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+  .services {
+    &__item {
+      padding: 15px 30px;
+    }
+  }
+  .experience {
+    &__item {
+      padding: 15px 0;
+    }
+  }
+  .quote {
+    &__desc {
+      padding: 0 0 30px;
+    }
+  }
+  .resume {
+    &__experience {
+      &_block {
+        width: 100%;
+      }
+    }
+    &__skill {
+      &_block {
+        padding: 0 30px 15px;
+        &_item-circle {
+          .circle {
+            padding: 0 15px 15px;
+          }
+        }
+      }
+    }
+  }
+  .right-block {
+    &__section {
+      padding: 15px 30px;
+      &:last-child {
+        padding: 15px 30px 0;
+      }
+    }
+  }
+  .about {
+    &__bio {
+      &_text {
+        padding-top: 15px;
+      }
+    }
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575px) {
+  .title {
+    font-size: 18px;
+    &:before {
+      width: 20px;
+      height: 20px;
+      left: -6px;
+      bottom: 3px;
+    }
+  }
+  .horisontal-line {
+    margin-left: -15px;
+  }
   .CVBlock {
     &_slide {
       height: 190px;
+    }
+    &_hero {
+      width: 100px;
+      height: 100px;
+      min-width: 100px;
+      min-height: 100px;
+      margin-top: -60px;
+    }
+    &_info {
+      &_name {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      &_job {
+        padding-top: 5px;
+        font-size: 14px;
+      }
+      &_social {
+        padding: 15px 0;
+      }
+    }
+    &_button {
+      padding: 20px 0;
+    }
+  }
+  .right-block {
+    &__section {
+      padding: 15px;
+      &:last-child {
+        padding: 15px;
+      }
+    }
+    &_text {
+      font-size: 14px;
+    }
+  }
+  .text-with-dots {
+    &__title {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__desc {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .about {
+    &__services {
+      &_list {
+        margin: 0 -15px;
+      }
+    }
+  }
+  .services {
+    &__item {
+      padding: 15px;
+      &_icon {
+        width: 45px;
+        height: 45px;
+        .icon {
+          font-size: 22px;
+        }
+      }
+      &_title {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      &_desc {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .quote {
+    padding: 15px;
+    &_item {
+      margin: 0 -15px;
+    }
+    &__desc {
+      padding: 0 0 15px;
+      font-size: 14px;
+    }
+    &__name {
+      font-size: 16px;
+    }
+  }
+  .titleWithIcon {
+    padding: 15px 0;
+    font-size: 16px;
+    .icon {
+      font-size: 24px;
+    }
+  }
+  .experience {
+    &__item {
+      &_title {
+        font-size: 16px;
+      }
+      &_company {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      &_desc {
+        font-size: 14px;
+      }
+    }
+  }
+  .skill-dots {
+    &__item {
+      min-width: 12px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .resume {
+    &__experience {
+      margin: 0 -15px;
+      &_block {
+        padding: 0 15px;
+      }
+    }
+    &__skill {
+      &_row {
+        margin: 0 -15px;
+        flex-wrap: wrap;
+      }
+      &_block {
+        width: 100%;
+        padding: 0 15px 15px;
+      }
+    }
+  }
+  .works {
+    grid-template-columns: 1fr;
+    padding: 15px 0;
+  }
+  .form {
+    &-group {
+      margin-bottom: 15px;
+      &-row {
+        flex-wrap: wrap;
+        .form-group {
+          width: 100%;
+          flex: none;
+        }
+      }
+      input,
+      textarea {
+        font-size: 14px;
+      }
+      input {
+        height: 40px;
+      }
+      textarea {
+        height: 80px;
+      }
+    }
+    &-validation {
+      font-size: 10px;
+    }
+    &-button {
+      button {
+        height: 40px;
+      }
+    }
+  }
+  .contact {
+    &__form,
+    &__map {
+      padding: 15px 0;
     }
   }
 }

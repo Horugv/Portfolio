@@ -1,6 +1,7 @@
 .resume {
   &__experience {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -30px;
     &_block {
       width: 50%;

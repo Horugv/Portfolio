@@ -51,6 +51,9 @@
   }
   &__section {
     padding: 30px;
+    &:last-child {
+      padding: 30px 30px 0;
+    }
   }
 }
 
