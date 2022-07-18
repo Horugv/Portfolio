@@ -5,22 +5,22 @@ import NavItem from "../components/UI/NavItem";
 
 const data = [
   {
-    path: "/",
+    path: "/portfolio/",
     text: "about",
     icon: "icon-user",
   },
   {
-    path: "/resume",
+    path: "/portfolio/resume",
     text: "resume",
     icon: "icon-profile",
   },
   {
-    path: "/works",
+    path: "/portfolio/works",
     text: "works",
     icon: "icon-terminal",
   },
   {
-    path: "/contact",
+    path: "/portfolio/contact",
     text: "contact",
     icon: "icon-at",
   },
