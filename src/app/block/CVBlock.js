@@ -5,10 +5,10 @@ const CVBlock = () => {
   return (
     <div className="CVBlock">
       <div className="CVBlock_slide">
-        <img src="/media/bg-test.jpg" alt="forest" />
+        <img src="./media/bg-test.jpg" alt="forest" />
       </div>
       <div className="CVBlock_hero">
-        <img src="/media/Ihonin.jpg" alt="Yevhenii Ihonin" />
+        <img src="./media/Ihonin.jpg" alt="Yevhenii Ihonin" />
       </div>
       <div className="CVBlock_info">
         <div className="CVBlock_info_name">Ihonin Yevhenii</div>

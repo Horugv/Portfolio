@@ -8,17 +8,17 @@ import Works from "../components/UI/Works";
 const dataWorks = [
   {
     title: "Forest",
-    path: "/media/bg-test.jpg",
+    path: "./media/bg-test.jpg",
     technology: "React, html, css",
   },
   {
     title: "Forest",
-    path: "/media/bg-test.jpg",
+    path: "./media/bg-test.jpg",
     technology: "React, html, css, React, html, css",
   },
   {
     title: "Forest",
-    path: "/media/bg-test.jpg",
+    path: "./media/bg-test.jpg",
     technology: "React, html, css, test",
   },
 ];

@@ -5,7 +5,7 @@ import NavItem from "../components/UI/NavItem";
 
 const data = [
   {
-    path: "/about",
+    path: "/",
     text: "about",
     icon: "icon-user",
   },
@@ -85,7 +85,7 @@ const Nav = () => {
     <div className="navigation__mob">
       <div className="navigation__user">
         <div className="navigation__img">
-          <img src="/media/Ihonin.jpg" alt="Ihonin Yevhenii" />
+          <img src="./media/Ihonin.jpg" alt="Ihonin Yevhenii" />
         </div>
         <div className="navigation__info">
           <div className="navigation__hero">Ihonin Yevhenii</div>
