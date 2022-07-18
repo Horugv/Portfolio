@@ -9,6 +9,8 @@ import Resume from "./page/Resume";
 import Work from "./page/Work";
 import Contact from "./page/Contact";
 
+import { defaultPath } from "./config";
+
 import "../styles/index.scss";
 
 const App = () => {
@@ -19,11 +21,11 @@ const App = () => {
         <div className="main__block">
           <CVBlock />
           <Switch>
-            <Route path="/" exact component={About} />
-            <Route path="/resume" exact component={Resume} />
-            <Route path="/works" exact component={Work} />
-            <Route path="/contact" exact component={Contact} />
-            <Redirect to="/" />
+            <Route path={`${defaultPath}`} exact component={About} />
+            <Route path={`${defaultPath}/resume`} exact component={Resume} />
+            <Route path={`${defaultPath}/works`} exact component={Work} />
+            <Route path={`${defaultPath}/contact`} exact component={Contact} />
+            <Redirect to={`${defaultPath}`} />
           </Switch>
         </div>
       </main>

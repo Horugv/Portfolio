@@ -3,24 +3,26 @@ import cx from "classnames";
 
 import NavItem from "../components/UI/NavItem";
 
+import { defaultPath } from "../config";
+
 const data = [
   {
-    path: "/portfolio/",
+    path: `${defaultPath}/`,
     text: "about",
     icon: "icon-user",
   },
   {
-    path: "/portfolio/resume",
+    path: `${defaultPath}resume`,
     text: "resume",
     icon: "icon-profile",
   },
   {
-    path: "/portfolio/works",
+    path: `${defaultPath}/works`,
     text: "works",
     icon: "icon-terminal",
   },
   {
-    path: "/portfolio/contact",
+    path: `${defaultPath}/contact`,
     text: "contact",
     icon: "icon-at",
   },
@@ -85,7 +87,7 @@ const Nav = () => {
     <div className="navigation__mob">
       <div className="navigation__user">
         <div className="navigation__img">
-          <img src="./media/Ihonin.jpg" alt="Ihonin Yevhenii" />
+          <img src={`${defaultPath}/media/Ihonin.jpg`} alt="Ihonin Yevhenii" />
         </div>
         <div className="navigation__info">
           <div className="navigation__hero">Ihonin Yevhenii</div>
