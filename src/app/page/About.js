@@ -20,7 +20,7 @@ const dataInfo = [
   },
   {
     title: "Residence",
-    desc: "Ukrain",
+    desc: "Ukraine",
   },
   {
     title: "Addres",
@@ -30,25 +30,20 @@ const dataInfo = [
 
 const dataServices = [
   {
-    icon: "icon-embed2",
-    title: "front-end",
-    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
+    icon: "icon-e-commerce",
+    title: "E-commerce projects",
+    desc: "During my work I completed two E‑commerce project using NextJS.",
+  },
+  {
+    icon: "icon-admin-panel",
+    title: "Admin panel",
+    desc: "I had developed several admin panel using React using CoreUI and Material UI libraries.",
   },
   {
     icon: "icon-embed2",
-    title: "front-end",
-    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
-  },
-  {
-    icon: "icon-embed2",
-    title: "front-end",
-    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
-  },
-  {
-    icon: "icon-embed2",
-    title: "front-end",
-    desc: "Modern and mobile-ready website that will help you reach all of your marketing.Modern and mobile-ready website that will help you reach all of your marketing.",
-  },
+    title: "Create layout",
+    desc: "I had completed 10+ layout from Figma, Avocode, Zeplin, Adobe PS, Adobe XD using HTML, CSS, jQuery for CMR systems (only layout, without integration).",
+  }
 ];
 
 const About = () => {
@@ -59,9 +54,8 @@ const About = () => {
           <Title colorText="About" text="Me" />
           <HorisontalLine />
           <div className="right-block_text about__bio_text">
-            I am Ryan Adlard, web designer from USA, California. I have rich
-            experience in web site design and building and customization, also I
-            am good at wordpress. I love to talk with you about our unique.
+            I am Ihonin Yevhenii, Front-end developer from Ukraine, Ivano-Frankivsk. 
+            I have 2 years of commercial web development experience. I’m specializing in frontend development using HTML, CSS/SCSS, JS/jQuery, React/Next.
           </div>
           <div className="about__bio_info">
             <TextWithDotsBlock data={dataInfo} />
@@ -69,13 +63,13 @@ const About = () => {
         </div>
 
         <div className="about__services right-block__section">
-          <Title colorText="My" text="Services" />
+          <Title colorText="My" text="Experience" />
           <HorisontalLine />
           <div className="about__services_list">
             <ServicesList data={dataServices} />
           </div>
         </div>
-        <div className="about__quote right-block__section">
+        {/* <div className="about__quote right-block__section">
           <Title colorText="Quote" text="" />
           <HorisontalLine />
           <div className="about__quote_item">
@@ -88,7 +82,7 @@ const About = () => {
               position={"React dev"}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </RightBlock>
   );
