@@ -7,10 +7,16 @@ import { TextWithDotsBlock } from "../components/UI/TextWithDots";
 import { ServicesList } from "../components/UI/Services";
 import { Quote } from "../components/UI/Quote";
 
+import getCurrentAge from "../helpers/getCurrentAge";
+
 const dataInfo = [
   {
     title: "Age",
-    desc: "23",
+    desc: getCurrentAge({
+      year: 1997,
+      month: 6,
+      day: 19,
+    }),
   },
   {
     title: "Residence",
