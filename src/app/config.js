@@ -17,7 +17,7 @@ export const aboutInfo = {
       desc: "Ukraine",
     },
     {
-      title: "Addres",
+      title: "Address",
       desc: "Ivano-Frankivsk, Ukraine",
     },
   ],
