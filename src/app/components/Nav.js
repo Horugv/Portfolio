@@ -12,7 +12,7 @@ const data = [
     icon: "icon-user",
   },
   {
-    path: `${defaultPath}resume`,
+    path: `${defaultPath}/resume`,
     text: "resume",
     icon: "icon-profile",
   },

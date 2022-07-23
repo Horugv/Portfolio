@@ -1,1 +1,1 @@
-export const defaultPath = '/portfolio'
+export const defaultPath = '/Portfolio'
