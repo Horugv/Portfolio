@@ -30,7 +30,7 @@ export const aboutInfo = {
     {
       icon: "icon-admin-panel",
       title: "Admin panel",
-      desc: "I had developed several admin panel using React using CoreUI and Material UI libraries.",
+      desc: "I had developed several admin panel using React with CoreUI and Material UI libraries usage.",
     },
     {
       icon: "icon-embed2",
@@ -95,7 +95,7 @@ export const resumeInfo = {
     {
       title: "English",
       count: 10,
-      activeCount: 3,
+      activeCount: 4,
     },
   ],
   knowledge: [
