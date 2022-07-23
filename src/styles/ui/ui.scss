@@ -338,6 +338,9 @@
       transition: color 0.5s;
       &:hover {
         color: $colorMain;
+        .icon {
+          margin-left: 15px;
+        }
       }
       &:disabled {
         color: $colorMain;
@@ -345,6 +348,8 @@
       & .icon {
         margin-left: 10px;
         font-size: 20px;
+
+        transition: margin .3s;
       }
     }
   }

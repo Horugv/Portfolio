@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 import { defaultPath } from "../config";
 
@@ -42,7 +43,13 @@ const CVBlock = () => {
 
       <div className="CVBlock_bottom">
         <button className="CVBlock_button">download cv</button>
-        <button className="CVBlock_button">contact me</button>
+        <Link
+          to={`${defaultPath}/contact`}
+          exact
+          className="CVBlock_button"
+        >
+          contact me
+        </Link>
       </div>
     </div>
   );
