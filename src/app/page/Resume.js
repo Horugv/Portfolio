@@ -11,19 +11,22 @@ import TitleWithIcon from "../components/UI/TitleWithIcon";
 
 const experience = [
   {
-    date: "2013 - Present",
-    title: "Art Director",
-    company: "Facebook Inc.",
-    desc: "Collaborate with creative and development teams on the execution of ideas.",
+    date: "2020 - Present",
+    title: "Front-end developer",
+    company: "Web-systems Solutions",
+    desc: "Сreation layouts for CRM systems using HTML/SCSS/jQuery and create React/NextJS apps.",
     active: true,
-  },
+  }
+];
+
+const eductaions = [
   {
-    date: "2013 - Present",
-    title: "Art Director",
-    company: "Facebook Inc.",
-    desc: "Collaborate with creative and development teams on the execution of ideas.",
+    date: "2016 - 2021",
+    title: "Computer Science",
+    company: "Kamenetz-Podolsk National University nomine Ivan Ogienko",
+    desc: "",
     active: false,
-  },
+  }
 ];
 
 const coding = [
@@ -41,11 +44,11 @@ const coding = [
   },
   {
     title: "jQuery",
-    percent: 55,
+    percent: 75,
   },
   {
     title: "React",
-    percent: 70,
+    percent: 80,
   },
 ];
 
@@ -63,7 +66,7 @@ const language = [
   {
     title: "English",
     count: 10,
-    activeCount: 4,
+    activeCount: 3,
   },
 ];
 
@@ -72,15 +75,14 @@ const knowledge = [
   "BEM",
   "Pug",
   "SCSS | Stylus | Less",
-  "Bootstrap",
   "jQuery",
   "React",
   "React Hooks",
   "React Redux",
   "React Context",
+  "NextJS",
   "Rest API",
   "Git",
-  "Jira",
   "npm, yarn",
   "Gulp",
   "Webpack 4",
@@ -104,7 +106,7 @@ const Resume = () => {
             <Experience
               blockTitle="education"
               icon={"icon-graduate-cap"}
-              data={experience}
+              data={eductaions}
             />
           </div>
         </div>
