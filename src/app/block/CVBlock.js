@@ -42,7 +42,7 @@ const CVBlock = () => {
       </div>
 
       <div className="CVBlock_bottom">
-        <button className="CVBlock_button">download cv</button>
+        <button className="CVBlock_button" disabled>download cv</button>
         <Link
           to={`${defaultPath}/contact`}
           className="CVBlock_button"
