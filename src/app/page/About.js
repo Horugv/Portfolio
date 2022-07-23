@@ -7,44 +7,7 @@ import { TextWithDotsBlock } from "../components/UI/TextWithDots";
 import { ServicesList } from "../components/UI/Services";
 // import { Quote } from "../components/UI/Quote";
 
-import getCurrentAge from "../helpers/getCurrentAge";
-
-const dataInfo = [
-  {
-    title: "Age",
-    desc: getCurrentAge({
-      year: 1997,
-      month: 6,
-      day: 19,
-    }),
-  },
-  {
-    title: "Residence",
-    desc: "Ukraine",
-  },
-  {
-    title: "Addres",
-    desc: "Ivano-Frankivsk, Ukraine",
-  },
-];
-
-const dataServices = [
-  {
-    icon: "icon-e-commerce",
-    title: "E-commerce projects",
-    desc: "During my work I completed two E‑commerce project using NextJS.",
-  },
-  {
-    icon: "icon-admin-panel",
-    title: "Admin panel",
-    desc: "I had developed several admin panel using React using CoreUI and Material UI libraries.",
-  },
-  {
-    icon: "icon-embed2",
-    title: "Create layout",
-    desc: "I had completed 10+ layout from Figma, Avocode, Zeplin, Adobe PS, Adobe XD using HTML, CSS, jQuery for CMR systems (only layout, without integration).",
-  }
-];
+import { aboutInfo } from '../config' 
 
 const About = () => {
   return (
@@ -58,7 +21,7 @@ const About = () => {
             I have 2 years of commercial web development experience. I’m specializing in frontend development using HTML, CSS/SCSS, JS/jQuery, React/Next.
           </div>
           <div className="about__bio_info">
-            <TextWithDotsBlock data={dataInfo} />
+            <TextWithDotsBlock data={aboutInfo.mainInfo} />
           </div>
         </div>
 
@@ -66,7 +29,7 @@ const About = () => {
           <Title colorText="My" text="Experience" />
           <HorisontalLine />
           <div className="about__services_list">
-            <ServicesList data={dataServices} />
+            <ServicesList data={aboutInfo.experienceInfo} />
           </div>
         </div>
         {/* <div className="about__quote right-block__section">

@@ -7,20 +7,7 @@ import Map from "../components/Map";
 import ContactForm from "../components/ContactForm";
 import { TextWithDotsBlock } from "../components/UI/TextWithDots";
 
-const contactInfo = [
-  {
-    title: "Address",
-    desc: "Ivano-Frankivsk, Ukraine",
-  },
-  {
-    title: "Email",
-    desc: "Horugv16@gmail.com",
-  },
-  {
-    title: "Phone",
-    desc: "+380 97 909 3001",
-  },
-];
+import { contactInfo } from "../config";
 
 const Contact = () => {
   return (
@@ -33,7 +20,7 @@ const Contact = () => {
             <Map />
           </div>
           <div className="contact__info">
-            <TextWithDotsBlock data={contactInfo} />
+            <TextWithDotsBlock data={contactInfo.mainInfo} />
           </div>
         </div>
         <div className="right-block__section">

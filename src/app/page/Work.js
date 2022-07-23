@@ -5,25 +5,7 @@ import Title from "../components/UI/Title";
 import HorisontalLine from "./../components/UI/HorisontalLine";
 import Works from "../components/UI/Works";
 
-import { defaultPath } from "../config";
-
-const dataWorks = [
-  {
-    title: "Forest",
-    path: `${defaultPath}/media/bg-test.jpg`,
-    technology: "React, html, css",
-  },
-  {
-    title: "Forest",
-    path: `${defaultPath}/media/bg-test.jpg`,
-    technology: "React, html, css, React, html, css",
-  },
-  {
-    title: "Forest",
-    path: `${defaultPath}/media/bg-test.jpg`,
-    technology: "React, html, css, test",
-  },
-];
+import { worksInfo } from "../config";
 
 const Work = () => {
   return (
@@ -32,7 +14,7 @@ const Work = () => {
         <div className="right-block__section">
           <Title colorText="Works" />
           <HorisontalLine />
-          <Works data={dataWorks} />
+          <Works data={worksInfo.works} />
         </div>
       </div>
     </RightBlock>
