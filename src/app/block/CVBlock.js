@@ -45,7 +45,6 @@ const CVBlock = () => {
         <button className="CVBlock_button">download cv</button>
         <Link
           to={`${defaultPath}/contact`}
-          exact
           className="CVBlock_button"
         >
           contact me

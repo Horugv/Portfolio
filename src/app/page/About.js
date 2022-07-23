@@ -5,7 +5,7 @@ import Title from "../components/UI/Title";
 import HorisontalLine from "./../components/UI/HorisontalLine";
 import { TextWithDotsBlock } from "../components/UI/TextWithDots";
 import { ServicesList } from "../components/UI/Services";
-import { Quote } from "../components/UI/Quote";
+// import { Quote } from "../components/UI/Quote";
 
 import getCurrentAge from "../helpers/getCurrentAge";
 

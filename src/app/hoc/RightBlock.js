@@ -5,6 +5,7 @@ const RighrBlock = ({ children }) => {
   let [showBlock, setShowBlock] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setShowBlock(true);
   }, []);
 
